@@ -1,0 +1,101 @@
+# Master .gitignore for LEXLY Project
+
+# =====================================================================
+# Security & Secret Shields (NEVER COMMIT SECRETS OR ENV FILES)
+# =====================================================================
+.env
+.env.*
+*.env
+!.env.example
+!*.env.example
+backend/.env
+backend/.env.*
+!backend/.env.example
+
+# Credentials & Key Stores
+*.pem
+*.key
+*.cert
+*.keystore
+*.jks
+release.properties
+google-services.json
+
+# =====================================================================
+# Python / FastAPI Backend
+# =====================================================================
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Package distributions
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Testing & Linting
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.ruff_cache/
+.mypy_cache/
+
+# =====================================================================
+# Android / Jetpack Compose Client
+# =====================================================================
+.gradle/
+**/build/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+local.properties
+*.apk
+*.aab
+*.ap_
+output-metadata.json
+
+# =====================================================================
+# IDEs & System Metadata
+# =====================================================================
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+*.log

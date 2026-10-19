@@ -1,0 +1,399 @@
+[
+  {
+    "id": "gold_001",
+    "category": "body",
+    "description": "Simple assault with fists during an argument in a market",
+    "narrative": "A customer got into an argument with a vegetable vendor over prices and punched the vendor in the cheek, causing swelling and localized facial pain without breaking any bones or using any weapon.",
+    "incident_date": "2024-08-10",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["115(2)"],
+    "expected_ipc_equivalent": ["323"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "FALSE",
+      "dangerous_weapon_or_means": "FALSE",
+      "grave_and_sudden_provocation": "FALSE"
+    }
+  },
+  {
+    "id": "gold_002",
+    "category": "body",
+    "description": "Severe beating resulting in a fractured arm",
+    "narrative": "During a heated dispute over parking, the accused beat the complainant with fists and kicked him to the ground, resulting in a compound fracture of his left forearm.",
+    "incident_date": "2024-09-02",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["117(2)"],
+    "expected_ipc_equivalent": ["325"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "TRUE",
+      "dangerous_weapon_or_means": "FALSE"
+    }
+  },
+  {
+    "id": "gold_003",
+    "category": "body",
+    "description": "Stabbing with a kitchen knife causing simple flesh wound",
+    "narrative": "A man attacked his neighbour with a small kitchen knife during a quarrel, inflicting a cut on his shoulder that required stitches, but did not fracture any bone or cause permanent disability.",
+    "incident_date": "2024-07-20",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["118(1)"],
+    "expected_ipc_equivalent": ["324"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "FALSE",
+      "dangerous_weapon_or_means": "TRUE"
+    }
+  },
+  {
+    "id": "gold_004",
+    "category": "body",
+    "description": "Sword attack causing grievous bone fracture and limb injury",
+    "narrative": "An assailant attacked the shopkeeper with a sharp iron sword, striking his arm and shattering the bone, resulting in permanent impairment.",
+    "incident_date": "2024-08-15",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["118(2)"],
+    "expected_ipc_equivalent": ["326"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "TRUE",
+      "dangerous_weapon_or_means": "TRUE"
+    }
+  },
+  {
+    "id": "gold_005",
+    "category": "body",
+    "description": "Spontaneous slap upon grave provocation",
+    "narrative": "A passenger hurled sudden abusive obscenities about a driver's mother, causing the driver to react spontaneously and slap the passenger across the face.",
+    "incident_date": "2024-08-01",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["122(1)"],
+    "expected_ipc_equivalent": ["334"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grave_and_sudden_provocation": "TRUE",
+      "grievous_injury_type": "FALSE"
+    }
+  },
+  {
+    "id": "gold_006",
+    "category": "body",
+    "description": "Grievous injury inflicted on grave provocation",
+    "narrative": "Upon being provoked with severe physical insults, the accused shoved the agitator against a stone pillar, unintentionally fracturing his collarbone.",
+    "incident_date": "2024-09-12",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["122(2)"],
+    "expected_ipc_equivalent": ["335"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "TRUE",
+      "grave_and_sudden_provocation": "TRUE"
+    }
+  },
+  {
+    "id": "gold_007",
+    "category": "body",
+    "description": "Blocking a public footpath",
+    "narrative": "The accused stood in front of the pedestrian on a public road, physically preventing him from walking down the street towards his workplace.",
+    "incident_date": "2024-07-15",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["126(2)"],
+    "expected_ipc_equivalent": ["341"],
+    "key_facts": {
+      "wrongful_restraint": "TRUE",
+      "wrongful_confinement": "FALSE"
+    }
+  },
+  {
+    "id": "gold_008",
+    "category": "body",
+    "description": "Locking a debtor in a godown",
+    "narrative": "The factory owner locked a worker inside a store room and padlocked the door from the outside, keeping him detained for 4 hours.",
+    "incident_date": "2024-08-22",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["127(2)"],
+    "expected_ipc_equivalent": ["342"],
+    "key_facts": {
+      "wrongful_restraint": "TRUE",
+      "wrongful_confinement": "TRUE"
+    }
+  },
+  {
+    "id": "gold_009",
+    "category": "body",
+    "description": "Threatening physical assault without injury",
+    "narrative": "An unruly commuter raised his clenched fist at the bus conductor and shook it menacingly, threatening to beat him up without causing bodily injury.",
+    "incident_date": "2024-07-28",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["131"],
+    "expected_ipc_equivalent": ["352"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "FALSE",
+      "victim_is_public_servant": "FALSE",
+      "intent_to_outrage_modesty": "FALSE"
+    }
+  },
+  {
+    "id": "gold_010",
+    "category": "body",
+    "description": "Pushing an on-duty traffic police officer",
+    "narrative": "When a traffic constable stopped an overspeeding car and asked for documents, the driver shoved the constable violently to escape issuing a challan.",
+    "incident_date": "2024-08-05",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["132"],
+    "expected_ipc_equivalent": ["353"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "victim_is_public_servant": "TRUE"
+    }
+  },
+  {
+    "id": "gold_011",
+    "category": "body",
+    "description": "Outraging modesty of a woman in an elevator",
+    "narrative": "The accused cornered a female colleague in an office lift, grabbing her dupatta and making sexually offensive physical gestures against her will.",
+    "incident_date": "2024-09-08",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["74"],
+    "expected_ipc_equivalent": ["354"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "intent_to_outrage_modesty": "TRUE"
+    }
+  },
+  {
+    "id": "gold_012",
+    "category": "property",
+    "description": "Bicycle stolen from outside a park",
+    "narrative": "A young boy parked his bicycle near the park fence. When he returned 30 minutes later, someone had dishonestly taken it away without his consent.",
+    "incident_date": "2024-07-10",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["303(2)"],
+    "expected_ipc_equivalent": ["379"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "without_consent": "TRUE",
+      "dishonest_intention": "TRUE",
+      "inside_building_or_dwelling": "FALSE",
+      "instant_fear_of_death_or_hurt": "FALSE"
+    }
+  },
+  {
+    "id": "gold_013",
+    "category": "property",
+    "description": "Laptop taken from inside an apartment",
+    "narrative": "While the tenant was away at work, the landlord unlocked the flat without permission and took a MacBook laptop claiming the tenant owed unpaid maintenance.",
+    "incident_date": "2024-08-14",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["305"],
+    "expected_ipc_equivalent": ["380"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "without_consent": "TRUE",
+      "dishonest_intention": "TRUE",
+      "inside_building_or_dwelling": "TRUE",
+      "instant_fear_of_death_or_hurt": "FALSE"
+    }
+  },
+  {
+    "id": "gold_014",
+    "category": "property",
+    "description": "Mobile phone snatching on a motorcycle",
+    "narrative": "Two men on a motorcycle drove past a pedestrian, suddenly and forcibly grabbed her iPhone from her hand, and sped off immediately.",
+    "incident_date": "2024-07-25",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["304(2)"],
+    "expected_ipc_equivalent": ["379A"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "without_consent": "TRUE",
+      "dishonest_intention": "TRUE",
+      "instant_fear_of_death_or_hurt": "FALSE"
+    }
+  },
+  {
+    "id": "gold_015",
+    "category": "property",
+    "description": "Extortion under threat of releasing private photos",
+    "narrative": "The blackmailer threatened the businessman that he would leak private photos to his family unless he transferred 2 lakh rupees, coercing him into handing over the cash.",
+    "incident_date": "2024-09-01",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["308(2)"],
+    "expected_ipc_equivalent": ["384"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "dishonest_intention": "TRUE",
+      "without_consent": "FALSE",
+      "instant_fear_of_death_or_hurt": "FALSE"
+    }
+  },
+  {
+    "id": "gold_016",
+    "category": "property",
+    "description": "Armed robbery at knifepoint on a deserted road",
+    "narrative": "A lone mugger cornered a student on a dark street, held a switchblade knife to his throat, and demanded his wallet and gold chain.",
+    "incident_date": "2024-08-18",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["309(4)"],
+    "expected_ipc_equivalent": ["392"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "dishonest_intention": "TRUE",
+      "instant_fear_of_death_or_hurt": "TRUE",
+      "five_or_more_offenders": "FALSE",
+      "physical_contact": "FALSE"
+    }
+  },
+  {
+    "id": "gold_017",
+    "category": "property",
+    "description": "Robbery accompanied by physical beating and knife slashing",
+    "narrative": "A robber demanded the victim's wallet and, when the victim hesitated, slashed the victim's hand with a knife and punched him before fleeing with the money.",
+    "incident_date": "2024-09-05",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["309(6)"],
+    "expected_ipc_equivalent": ["394"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "dishonest_intention": "TRUE",
+      "instant_fear_of_death_or_hurt": "TRUE",
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "five_or_more_offenders": "FALSE"
+    }
+  },
+  {
+    "id": "gold_018",
+    "category": "property",
+    "description": "Armed bank heist by a gang of six individuals",
+    "narrative": "A gang of six masked men entered a cooperative bank branch brandishing firearms, held the staff at gunpoint, and looted 15 lakh rupees from the cash counter.",
+    "incident_date": "2024-08-30",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["310(2)"],
+    "expected_ipc_equivalent": ["395"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "dishonest_intention": "TRUE",
+      "instant_fear_of_death_or_hurt": "TRUE",
+      "five_or_more_offenders": "TRUE"
+    }
+  },
+  {
+    "id": "gold_019",
+    "category": "property",
+    "description": "Unlawful entry into agricultural farmland to intimidate tenant",
+    "narrative": "The accused unlawfully entered onto the complainant's private agricultural land carrying wooden sticks, shouting threats and refusing to leave.",
+    "incident_date": "2024-07-18",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["329(3)"],
+    "expected_ipc_equivalent": ["447"],
+    "key_facts": {
+      "unlawful_entry_into_property": "TRUE",
+      "inside_building_or_dwelling": "FALSE"
+    }
+  },
+  {
+    "id": "gold_020",
+    "category": "property",
+    "description": "Forcible entry into a residential home",
+    "narrative": "The accused broke the latch of the complainant's residential house at midnight and entered the living room to threaten and insult the occupants.",
+    "incident_date": "2024-08-25",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["331(1)"],
+    "expected_ipc_equivalent": ["448"],
+    "key_facts": {
+      "unlawful_entry_into_property": "TRUE",
+      "inside_building_or_dwelling": "TRUE"
+    }
+  },
+  {
+    "id": "gold_021",
+    "category": "body",
+    "description": "Pre-July 2024 simple hurt incident governed by IPC",
+    "narrative": "On 15 January 2024, during a local cricket match, two players fought and one hit the other with his bare hands, causing bruises and swelling.",
+    "incident_date": "2024-01-15",
+    "expected_primary_regime": "IPC",
+    "expected_sections": ["323"],
+    "expected_bns_equivalent": ["115(2)"],
+    "key_facts": {
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "FALSE"
+    }
+  },
+  {
+    "id": "gold_022",
+    "category": "property",
+    "description": "Pre-July 2024 house theft governed primarily by IPC",
+    "narrative": "On 10 March 2024, a burglar entered a locked residential bungalow through a window and stole gold ornaments worth 50,000 rupees.",
+    "incident_date": "2024-03-10",
+    "expected_primary_regime": "IPC",
+    "expected_sections": ["380"],
+    "expected_bns_equivalent": ["305"],
+    "key_facts": {
+      "movable_property_taken": "TRUE",
+      "without_consent": "TRUE",
+      "dishonest_intention": "TRUE",
+      "inside_building_or_dwelling": "TRUE"
+    }
+  },
+  {
+    "id": "gold_023",
+    "category": "multi_offence",
+    "description": "House trespass coupled with simple theft",
+    "narrative": "An intruder broke into an occupied family home at night, crept into the master bedroom, and stole a laptop and watch without violence.",
+    "incident_date": "2024-08-20",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["305", "331(1)"],
+    "expected_ipc_equivalent": ["380", "448"],
+    "key_facts": {
+      "unlawful_entry_into_property": "TRUE",
+      "inside_building_or_dwelling": "TRUE",
+      "movable_property_taken": "TRUE",
+      "without_consent": "TRUE"
+    }
+  },
+  {
+    "id": "gold_024",
+    "category": "multi_offence",
+    "description": "Extortion accompanied by wrongful confinement",
+    "narrative": "A gang locked a young trader inside a warehouse room and told him they would not release him until his family paid 50,000 rupees in cash.",
+    "incident_date": "2024-09-10",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["127(2)", "308(2)"],
+    "expected_ipc_equivalent": ["342", "384"],
+    "key_facts": {
+      "wrongful_restraint": "TRUE",
+      "wrongful_confinement": "TRUE",
+      "movable_property_taken": "TRUE",
+      "dishonest_intention": "TRUE"
+    }
+  },
+  {
+    "id": "gold_025",
+    "category": "multi_offence",
+    "description": "Robbery in dwelling with grievous hurt caused to homeowner",
+    "narrative": "A burglar entered a bungalow at night to steal jewellery, but when the owner woke up, the burglar struck him with an iron rod, fracturing his arm, before fleeing with the gold.",
+    "incident_date": "2024-08-28",
+    "expected_primary_regime": "BNS",
+    "expected_sections": ["309(6)", "331(1)", "118(2)"],
+    "expected_ipc_equivalent": ["394", "448", "326"],
+    "key_facts": {
+      "unlawful_entry_into_property": "TRUE",
+      "inside_building_or_dwelling": "TRUE",
+      "movable_property_taken": "TRUE",
+      "instant_fear_of_death_or_hurt": "TRUE",
+      "physical_contact": "TRUE",
+      "bodily_pain_or_infirmity": "TRUE",
+      "grievous_injury_type": "TRUE",
+      "dangerous_weapon_or_means": "TRUE"
+    }
+  }
+]

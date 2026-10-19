@@ -1,0 +1,11 @@
+## Android SDK & Local Environment Configuration
+# Copy this file to local.properties and set your local Android SDK location.
+# DO NOT commit local.properties to version control.
+
+sdk.dir=/Users/YOUR_USER/Library/Android/sdk
+# For Windows: sdk.dir=C\:\\Users\\YOUR_USER\\AppData\\Local\\Android\\Sdk
+
+# Backend API Base URL for local testing:
+# Android Emulator host loopback: http://10.0.2.2:8000/api/v1
+# Physical Device over LAN: http://<YOUR_LOCAL_IP>:8000/api/v1
+LEXLY_API_BASE_URL=http://10.0.2.2:8000/api/v1
