@@ -1,0 +1,46 @@
+name: CI Gate & Benchmark Evaluation
+
+on:
+  push:
+    branches: [ main, Anup-Branch ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  backend-test:
+    name: Backend Test Suite & QA Gate
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          if [ -f backend/requirements.txt ]; then pip install -r backend/requirements.txt; fi
+          pip install pytest pytest-asyncio httpx httpx2
+
+      - name: Run Core Algorithm Tests (Phase 0)
+        run: |
+          python -m pytest tests/test_core.py
+
+      - name: Run Infra & API Integration Tests (Phase 1 & 3)
+        run: |
+          python -m pytest backend/tests/test_infra.py backend/tests/test_api_v1.py
+
+      - name: Run Gold Dataset Benchmark & Noisy Simulator (QA-401, QA-402)
+        run: |
+          python -m pytest backend/tests/test_evaluation_harness.py
+
+      - name: Run Standalone CLI Benchmark Runner
+        run: |
+          python backend/app/scripts/run_evaluation.py
+          python backend/app/scripts/run_evaluation.py --noise 0.10
+

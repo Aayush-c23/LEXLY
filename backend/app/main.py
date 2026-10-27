@@ -3,8 +3,8 @@ FastAPI Application Entry Point for LEXLY.
 
 Manages application lifespan:
 1. Initializes asyncpg PostgreSQL connection pool.
-2. Loads statutory corpus from Supabase into zero-latency in-memory cache.
-3. Provides health monitoring and API routing.
+2. Loads statutory corpus from Supabase or static seed into zero-latency in-memory cache.
+3. Configures API routing, middleware, and health monitoring.
 """
 
 import logging
@@ -12,11 +12,13 @@ from contextlib import asynccontextmanager
 from typing import Any, Dict
 from fastapi import FastAPI, status
 from fastapi.middleware.cors import CORSMiddleware
+from backend.app.api.v1.api import api_router
 from backend.app.core.config import settings
 from backend.app.core.database import close_db_pool, get_pool, init_db_pool
 from backend.app.engine.corpus_cache import (
     get_cached_matrix,
     is_cache_initialized,
+    load_corpus_from_seed,
     load_corpus_to_memory,
 )
 
@@ -42,12 +44,16 @@ async def lifespan(app: FastAPI):
     except Exception as exc:
         logger.error(f"Database connection could not be established during startup: {exc}")
 
-    # 2. Load corpus to in-memory cache if pool is available
+    # 2. Load corpus to in-memory cache
     if pool is not None:
         try:
             await load_corpus_to_memory(pool)
         except Exception as exc:
             logger.error(f"Error loading statutory corpus during startup: {exc}")
+            load_corpus_from_seed()
+    else:
+        logger.info("Initializing in-memory corpus from static seed data.")
+        load_corpus_from_seed()
 
     yield
 
@@ -74,6 +80,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Register API v1 routes
+app.include_router(api_router, prefix=settings.API_V1_STR)
 
 
 @app.get(
