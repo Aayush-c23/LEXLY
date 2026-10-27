@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">लेक्सली (LEXLY)</string>
+    <string name="app_subtitle">भारतीय कानूनी विश्लेषण सहायक</string>
+    
+    <!-- Input Screen -->
+    <string name="describe_incident_title">घटना का विवरण दें</string>
+    <string name="describe_incident_hint">क्या हुआ था? अपने शब्दों में बताएं कि क्या घटना घटी, कौन शामिल था, कोई चोट, संपत्ति की चोरी या धमकी दी गई थी।</string>
+    <string name="character_counter_format">%1$d / %2$d अक्षर</string>
+    <string name="incident_date_label">घटना की तिथि</string>
+    <string name="select_date">तिथि चुनें</string>
+    <string name="regime_bns_tag">भारतीय न्याय संहिता, 2023 (BNS) लागू</string>
+    <string name="regime_ipc_tag">भारतीय दंड संहिता, 1860 (IPC) लागू — 1 जुलाई 2024 से पहले</string>
+    <string name="analyze_button">कानूनी धाराओं का विश्लेषण करें</string>
+    <string name="bci_disclaimer">लेक्सली द्वारा दी गई जानकारी केवल भारतीय कानून के विश्लेषणात्मक व सूचनात्मक उद्देश्यों के लिए है और यह किसी वकील या विधिक परामर्शदाता का औपचारिक कानूनी प्रतिनिधित्व नहीं है।</string>
+    
+    <!-- Inquiry Screen -->
+    <string name="question_progress">प्रश्न %1$d (अधिकतम %2$d)</string>
+    <string name="candidates_filtering_count">सक्रिय कानूनी धाराएं: %1$d</string>
+    <string name="chip_yes">हाँ (YES)</string>
+    <string name="chip_no">नहीं (NO)</string>
+    <string name="chip_not_sure">निश्चित नहीं (NOT SURE)</string>
+    <string name="action_undo">पूर्ववत (Undo)</string>
+    <string name="action_reset">पुनः प्रारंभ करें</string>
+    
+    <!-- Results Screen -->
+    <string name="results_title">लागू होने वाली कानूनी धाराएं</string>
+    <string name="primary_regime_label">प्राथमिक कानून</string>
+    <string name="lesser_offences_title">सहायक व अधीनस्थ अपराध</string>
+    <string name="audit_trail_title">विश्लेषणात्मक ऑडिट ट्रेल (सूचना प्राप्ति)</string>
+    <string name="bailable">जमानती (Bailable)</string>
+    <string name="non_bailable">गैर-जमानती (Non-Bailable)</string>
+    <string name="cognizable">संज्ञेय (Cognizable)</string>
+    <string name="non_cognizable">असंज्ञेय (Non-Cognizable)</string>
+    <string name="share_summary">कानूनी सारांश साझा करें</string>
+    
+    <!-- Emergency -->
+    <string name="emergency_title">तत्काल आपातकालीन सहायता</string>
+    <string name="dial_helpline">कॉल करें: %1$s</string>
+
+    <!-- DPDP 2023 Consent -->
+    <string name="dpdp_consent_title">डीपीडीपी अधिनियम, 2023 गोपनीयता सूचना</string>
+    <string name="dpdp_consent_message">डिजिटल व्यक्तिगत डेटा संरक्षण अधिनियम (DPDP), 2023 के अनुपालन में, लेक्सली आपके संवेदनशील व्यक्तिगत पहचानकर्ताओं (आधार, पैन, फ़ोन नंबर) को ट्रांसमिशन से पहले डिवाइस पर ही हटा देता है। विश्लेषण सत्र 24 घंटे के स्वचालित विलोपन (TTL) के साथ अस्थायी हैं। कोई भी आईपी या डिवाइस लॉग स्थायी रूप से संग्रहीत नहीं किया जाता है। क्या आप कानूनी विश्लेषण के लिए अपने विवरण को संसाधित करने की सहमति देते हैं?</string>
+    <string name="dpdp_agree">मैं सहमत हूँ और आगे बढ़ें</string>
+    <string name="dpdp_decline">रद्द करें</string>
+</resources>
+

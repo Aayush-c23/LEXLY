@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">LEXLY</string>
+    <string name="app_subtitle">Adaptive Indian Legal Analysis</string>
+    
+    <!-- Input Screen -->
+    <string name="describe_incident_title">Describe the Incident</string>
+    <string name="describe_incident_hint">What happened? Describe what occurred, who was involved, any injuries, property taken, or threats made in your own words.</string>
+    <string name="character_counter_format">%1$d / %2$d characters</string>
+    <string name="incident_date_label">Incident Date</string>
+    <string name="select_date">Select Date</string>
+    <string name="regime_bns_tag">Applies Bharatiya Nyaya Sanhita, 2023 (BNS)</string>
+    <string name="regime_ipc_tag">Applies Indian Penal Code, 1860 (IPC) — Pre-1 July 2024</string>
+    <string name="analyze_button">Analyze Legal Provisions</string>
+    <string name="bci_disclaimer">Information provided by LEXLY is for educational and analytical purposes under Indian law and does not constitute formal legal counsel or advocate-client representation.</string>
+    
+    <!-- Inquiry Screen -->
+    <string name="question_progress">Question %1$d of ≤%2$d</string>
+    <string name="candidates_filtering_count">Active Statutory Scope: %1$d sections</string>
+    <string name="chip_yes">YES</string>
+    <string name="chip_no">NO</string>
+    <string name="chip_not_sure">NOT SURE</string>
+    <string name="action_undo">Undo</string>
+    <string name="action_reset">Start Over</string>
+    
+    <!-- Results Screen -->
+    <string name="results_title">Applicable Statutory Sections</string>
+    <string name="primary_regime_label">Governing Scheme</string>
+    <string name="lesser_offences_title">Lesser-Included &amp; Subsidiary Offences</string>
+    <string name="audit_trail_title">Analytical Audit Trail (Information Gain)</string>
+    <string name="bailable">Bailable</string>
+    <string name="non_bailable">Non-Bailable</string>
+    <string name="cognizable">Cognizable</string>
+    <string name="non_cognizable">Non-Cognizable</string>
+    <string name="share_summary">Share Legal Summary</string>
+    
+    <!-- Emergency -->
+    <string name="emergency_title">Immediate Emergency Assistance</string>
+    <string name="dial_helpline">Call %1$s</string>
+
+    <!-- DPDP 2023 Consent -->
+    <string name="dpdp_consent_title">DPDP Act, 2023 Privacy Notice</string>
+    <string name="dpdp_consent_message">In compliance with the Digital Personal Data Protection Act, 2023, LEXLY redacts sensitive personal identifiers (Aadhaar, PAN, phone numbers) on your device prior to transmission. Factual incident sessions are ephemeral with an automatic 24-hour expiration TTL and right to immediate erasure. No persistent IP or device logs are stored. Do you consent to processing your incident description for statutory analysis?</string>
+    <string name="dpdp_agree">I Agree &amp; Proceed</string>
+    <string name="dpdp_decline">Cancel</string>
+</resources>
+

@@ -6,17 +6,17 @@
 > - [x] **Phase 0:** Mathematical Engine & Information Gain Invariants (`engine/core.py`, `tests/test_core.py`)
 > - [x] **Phase 1:** Async Infrastructure, Pooler & In-Memory Corpus Cache (`corpus_cache.py`, `database.py`, `main.py`)
 > - [x] **Phase 2:** Corpus Seeding (BNS/IPC, bilingual questions, 768-dim Gemini embeddings, 25 gold benchmark cases)
-> - [ ] **Phase 3:** FastAPI REST Service & Engine Pipeline Integration
-> - [ ] **Phase 4:** Evaluation Runner, CI Gate & Noisy User Simulation
-> - [ ] **Phase 5:** Android Jetpack Compose MVI Client
-> - [ ] **Phase 6:** Hardening, Compliance (DPDP Act 2023) & Launch Preparation
+> - [x] **Phase 3:** FastAPI REST Service & Engine Pipeline Integration
+> - [x] **Phase 4:** Evaluation Runner, CI Gate & Noisy User Simulation
+> - [x] **Phase 5:** Android Jetpack Compose MVI Client
+> - [x] **Phase 6:** Hardening, Compliance (DPDP Act 2023) & Launch Preparation
 
 ---
 
 ## Track 1: FastAPI Backend & Engine Integration (Phase 3)
 
 ### Ticket BE-301: Crisis & Emergency Interception Middleware
-- [ ] **Task**: Implement pre-routing emergency classifier in `backend/app/api/v1/endpoints/analyze.py`.
+- [x] **Task**: Implement pre-routing emergency classifier in `backend/app/api/v1/endpoints/analyze.py`.
 - **Technical Context**:
   - Scenarios involving immediate threats to life, active domestic violence, sexual assault in progress, or crimes against children must trigger emergency interception before statutory analysis.
 - **Implementation Details**:
@@ -33,7 +33,7 @@
 ---
 
 ### Ticket BE-302: Parallel Intake Pipeline (`POST /api/v1/analyze`)
-- [ ] **Task**: Build the scenario ingestion endpoint orchestrating concurrent vector embedding and structured LLM extraction.
+- [x] **Task**: Build the scenario ingestion endpoint orchestrating concurrent vector embedding and structured LLM extraction.
 - **Contract**:
   - **Route**: `POST /api/v1/analyze`
   - **Headers**: `Idempotency-Key: UUID`, `X-Device-ID: String`
@@ -70,7 +70,7 @@
 ---
 
 ### Ticket BE-303: Zero-LLM Fast-Path Answer Endpoint (`POST /api/v1/session/{id}/answer`)
-- [ ] **Task**: Build high-throughput, in-memory clarification question resolution endpoint.
+- [x] **Task**: Build high-throughput, in-memory clarification question resolution endpoint.
 - **Contract**:
   - **Route**: `POST /api/v1/session/{session_id}/answer`
   - **Request Body**:
@@ -109,7 +109,7 @@
 ---
 
 ### Ticket BE-304: Session Undo & Revert Endpoint (`POST /api/v1/session/{id}/undo`)
-- [ ] **Task**: Implement deterministic state rollback for users who make a mistake or change their mind.
+- [x] **Task**: Implement deterministic state rollback for users who make a mistake or change their mind.
 - **Implementation Details**:
   - Read session state history from `state_payload["audit_trail"]`.
   - Revert state to step $N-1$, removing the last answered fact.
@@ -120,7 +120,7 @@
 ---
 
 ### Ticket BE-305: Ephemeral Scrubber / DPDP Session Purge (`DELETE /api/v1/session/{id}`)
-- [ ] **Task**: Comply with Indian DPDP Act 2023 right-to-erasure requirements.
+- [x] **Task**: Comply with Indian DPDP Act 2023 right-to-erasure requirements.
 - **Implementation Details**:
   - Permanent cascade deletion of `analysis_sessions` and `session_facts` for the specified session ID.
   - Setup background scheduled task to automatically purge sessions where `expires_at < NOW()` (24-hour TTL).
@@ -132,7 +132,7 @@
 ## Track 2: Android Jetpack Compose Client (Phase 5)
 
 ### Ticket AND-501: Architecture, DI & Network Layer
-- [ ] **Task**: Set up Kotlin Clean Architecture + MVI framework with Hilt, Retrofit 2, and OkHttp 3.
+- [x] **Task**: Set up Kotlin Clean Architecture + MVI framework with Hilt, Retrofit 2, and OkHttp 3.
 - **Technical Stack**:
   - Kotlin 2.0+, Jetpack Compose, Material 3, Hilt, Retrofit 2, Kotlinx Serialization, DataStore.
 - **Implementation Details**:
@@ -146,7 +146,7 @@
 ---
 
 ### Ticket AND-502: MVI ViewModel & Process-Death Survival
-- [ ] **Task**: Implement `AnalysisViewModel` with `StateFlow` and `SavedStateHandle`.
+- [x] **Task**: Implement `AnalysisViewModel` with `StateFlow` and `SavedStateHandle`.
 - **State Machine Definition**:
   ```kotlin
   sealed interface AnalysisUiState {
@@ -163,7 +163,7 @@
 ---
 
 ### Ticket AND-503: Scenario Input Screen
-- [ ] **Task**: Build Material 3 scenario intake interface.
+- [x] **Task**: Build Material 3 scenario intake interface.
 - **UI Components**:
   - `OutlinedTextField` with dynamic auto-expand (min 4 lines, max 10 lines).
   - Real-time character counter indicator ($20 - 2000$ characters) with color validation.
@@ -178,7 +178,7 @@
 ---
 
 ### Ticket AND-504: Dynamic Inquiry Screen with Accessible Chips
-- [ ] **Task**: Build interactive question resolution screen with colorblind-safe chips.
+- [x] **Task**: Build interactive question resolution screen with colorblind-safe chips.
 - **UI Components**:
   - Progress tracker: "Question X of $\le$5" with animated linear progress bar.
   - Active candidate count badge: "Filtering across X statutory sections".
@@ -195,7 +195,7 @@
 ---
 
 ### Ticket AND-505: Legal Resolution & Audit Screen
-- [ ] **Task**: Build comprehensive result presentation screen with expandable cards.
+- [x] **Task**: Build comprehensive result presentation screen with expandable cards.
 - **UI Components**:
   - Legal Regime Banner: Prominent chip indicating whether primary statute is **BNS, 2023** or **IPC, 1860** based on incident date.
   - `ProvisionResultCard`:
@@ -215,7 +215,7 @@
 ## Track 3: Evaluation Gate & Compliance (Phase 4 & 6)
 
 ### Ticket QA-401: Gold Dataset Evaluation Harness
-- [ ] **Task**: Build automated pytest benchmark runner executing against `backend/tests/gold_dataset.json`.
+- [x] **Task**: Build automated pytest benchmark runner executing against `backend/tests/gold_dataset.json`.
 - **Target Metrics**:
   - **Retrieval Recall@20**: $\ge 98\%$ of target provisions retrieved in initial candidate pool.
   - **Multi-Label Resolution F1**: $\ge 92\%$ accuracy on final provisions across all 25 gold scenarios.
@@ -226,7 +226,7 @@
 ---
 
 ### Ticket QA-402: Noisy User Simulator ($\epsilon = 0.10$)
-- [ ] **Task**: Validate Bayesian soft scoring fault-tolerance against mistaken user answers.
+- [x] **Task**: Validate Bayesian soft scoring fault-tolerance against mistaken user answers.
 - **Implementation Details**:
   - Script that simulates user responses to questions.
   - Injects $10\%$ random incorrect answers (`YES` instead of `NO` or vice versa).
@@ -237,13 +237,13 @@
 ---
 
 ### Ticket SEC-601: Indian DPDP Act 2023 & Security Audit
-- [ ] **Task**: Enforce regulatory compliance, data minimization, and privacy guardrails.
+- [x] **Task**: Enforce regulatory compliance, data minimization, and privacy guardrails.
 - **Checklist**:
-  - [ ] Client-side PII scrubber active for phone numbers, emails, and Aadhaar numbers.
-  - [ ] Mandatory explicit user consent dialog shown before first scenario submission.
-  - [ ] 24-hour TTL expiration enforced on Supabase `analysis_sessions`.
-  - [ ] Zero storage of IP addresses or raw device identifiers in persistent logs.
-  - [ ] Zero transmission of Supabase service-role key or Gemini API key to Android APK.
+  - [x] Client-side PII scrubber active for phone numbers, emails, and Aadhaar numbers.
+  - [x] Mandatory explicit user consent dialog shown before first scenario submission.
+  - [x] 24-hour TTL expiration enforced on Supabase `analysis_sessions`.
+  - [x] Zero storage of IP addresses or raw device identifiers in persistent logs.
+  - [x] Zero transmission of Supabase service-role key or Gemini API key to Android APK.
 - **Acceptance Criteria**:
   - Security audit passes; static code analysis confirms no secret leakage in client bundle.
 
